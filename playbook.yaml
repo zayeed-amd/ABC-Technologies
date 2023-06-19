@@ -8,8 +8,5 @@
       command: aws eks update-kubeconfig --name k8s-cluster --region us-east-1
 
     - name: Apply Kubernetes manifests
-      kubectl:
-        src: k8s-manifest
-        kubeconfig: ~/.kube/config
-        state: present
+      command: kubectl apply -f k8s-manifest
 
