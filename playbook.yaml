@@ -1,5 +1,6 @@
 ---
 - name: Ping test
+  hosts: myserver
   gather_facts: false
 
   tasks:
