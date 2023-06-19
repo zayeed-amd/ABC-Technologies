@@ -4,8 +4,8 @@
   gather_facts: false
 
   tasks:
-    - name: Load Kubernetes configuration
-      command: aws eks update-kubeconfig --name k8s-cluster --region us-east-1
+  #   - name: Load Kubernetes configuration
+  #     command: aws eks update-kubeconfig --name k8s-cluster --region us-east-1
 
     - name: Apply Kubernetes manifests
       command: kubectl apply -f k8s-manifest
